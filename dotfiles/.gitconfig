@@ -1,0 +1,36 @@
+[user]
+	name = Austin Roos
+	email = acroos@hey.com
+
+[core]
+	pager = delta
+	autocrlf = input
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true        # use n/N to move between diff sections
+	side-by-side = true
+	line-numbers = true
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[pull]
+	rebase = true
+
+[init]
+	defaultBranch = main
+
+[alias]
+	lg  = log --oneline --graph --decorate --all
+	st  = status -sb
+	co  = checkout
+	br  = branch
+	unstage = reset HEAD --
+	last    = log -1 HEAD
+	uncommit = reset --soft HEAD^

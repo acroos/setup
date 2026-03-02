@@ -1,0 +1,14 @@
+{
+  "servers": [
+    {
+      "extensions": ["ts", "tsx", "js", "jsx", "mjs", "cjs"],
+      "command": ["npx", "--", "typescript-language-server", "--stdio"],
+      "rootDir": "."
+    },
+    {
+      "extensions": ["rb"],
+      "command": ["bash", "-lc", "solargraph stdio"],
+      "rootDir": "."
+    }
+  ]
+}
