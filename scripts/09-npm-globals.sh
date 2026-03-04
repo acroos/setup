@@ -24,13 +24,14 @@ fi
 
 packages=(
   "npm"
-  "npm-check-updates"        # ncu — bump package.json deps to latest
-  "typescript"               # tsc — TypeScript compiler
-  "ts-node"                  # run .ts files directly
-  "vercel"                   # Vercel CLI
-  "serve"                    # instant local static file server
-  "typescript-language-server" # LSP server for JS/TS
-  "cclsp"                      # MCP server that exposes LSP to Claude Code
+  "npm-check-updates"           # ncu — bump package.json deps to latest
+  "typescript"                  # tsc — TypeScript compiler
+  "ts-node"                     # run .ts files directly
+  "vercel"                      # Vercel CLI
+  "serve"                       # instant local static file server
+  "typescript-language-server"  # LSP server for JS/TS
+  "cclsp"                       # MCP server that exposes LSP to Claude Code
+  "@nestjs/cli"                 # NestJS CLI for building server-side applications
 )
 
 echo "Installing global npm packages..."
