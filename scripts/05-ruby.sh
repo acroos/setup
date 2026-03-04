@@ -15,7 +15,7 @@ if ! command -v rbenv &>/dev/null; then
 fi
 
 # Update this to the latest stable Ruby as needed
-RUBY_VERSION="3.3.6"
+RUBY_VERSION="3.4.8"
 
 echo "Installing Ruby $RUBY_VERSION via rbenv..."
 rbenv install --skip-existing "$RUBY_VERSION"
