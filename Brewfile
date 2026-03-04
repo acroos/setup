@@ -36,6 +36,9 @@ brew "ruby-build"  # rbenv plugin for installing Ruby versions
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
 
+# Docker
+cask "docker"  # Docker Desktop
+
 # Apps
 cask "iterm2"
 cask "brave-browser"
