@@ -1,3 +1,4 @@
+EDITOR='vim'
 # =============================================================================
 # Oh My Zsh
 # =============================================================================
@@ -44,6 +45,7 @@ alias gaa='git add .'
 alias glog='git log --oneline --graph --decorate'
 alias gco='git checkout'
 alias gcob='git checkout -b'
+alias gcom='git checkout main'
 alias gcm='git commit -m'
 alias grb='git rebase'
 alias grbc='git rebase --continue'
@@ -51,4 +53,5 @@ alias grbi='git rebase -i'
 alias grba='git rebase --abort'
 alias gpp='git pull --prune'
 alias gpf='git push --force-with-lease'
-alias gpsup='git push --set-upstream origin $(git rev-parse --abrev-ref HEAD)'
+alias gpsup='git push --set-upstream origin $(git branch --show-current)'
+alias grbm='git fetch origin main && git rebase main'
