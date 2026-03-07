@@ -1,5 +1,10 @@
 # AGENTS instructions
 
+## Process
+
+- If there's uncertainty, prefer to ask over making assumptions
+- Every time a decision is made (either by an agent or a human), follow [the decision guide](./guides/decisions.md)
+
 ## Boundaries
 
 - **Ask first**
