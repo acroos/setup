@@ -104,15 +104,30 @@ colorscheme shades_of_purple
 " Key Mappings
 " =============================================================================
 
-let mapleader = " "
+let mapleader = ","
+let g:mapleader = ","
 
 " --- Your mappings ---
+" --- SAVING ---
 " ;; exits insert mode
 inoremap ;; <Esc>
 " ;,w saves from insert mode
 inoremap ;,w <Esc>:w<CR>
 " ;,x saves and quits from insert mode
 inoremap ;,x <Esc>:x<CR>
+" Fast saving
+nmap <leader>w :w!<CR>
+" Fast save and quit
+nmap <leader>x :x!<CR>
+" Fast quit
+nmap <leader>q :q<CR>
+
+" Tab management
+map <leader>tn :tabenew<CR>
+map <leader>tc :tabclose<CR>
+map <leader>th :tabprevious<CR>
+map <leader>tl :tabnext<CR>
+map <leader>te :tabedit <c-r>=expand("%:p:h")<CR>/
 
 " --- Search ---
 " Clear search highlight
