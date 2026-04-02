@@ -30,6 +30,16 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # direnv hook
 eval "$(direnv hook zsh)"
 
+
+# =============================================================================
+# PATH updates
+# =============================================================================
+
+# curl
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+# obsidian
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
+
 # =============================================================================
 # Claude Code
 # =============================================================================
@@ -56,3 +66,11 @@ alias gpf='git push --force-with-lease'
 alias gpsup='git push --set-upstream origin $(git branch --show-current)'
 alias grbm='git fetch origin main && git rebase main'
 alias gcfge='git config --edit --global'
+
+
+# =============================================================================
+# bundler
+# =============================================================================
+
+alias be='bundle exec'
+alias b='bundle'
