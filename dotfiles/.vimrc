@@ -26,7 +26,8 @@ Plug 'tpope/vim-repeat'      " makes . work with plugin commands
 " UI
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Rigellute/shades-of-purple.vim'
+
 
 call plug#end()
 
@@ -96,7 +97,8 @@ set shortmess+=c        " suppress completion menu messages
 " =============================================================================
 
 set termguicolors
-colorscheme dracula
+syntax enable
+colorscheme shades_of_purple
 
 " =============================================================================
 " Key Mappings
@@ -161,7 +163,8 @@ nnoremap <leader>s :split<CR>
 let g:airline_powerline_fonts = 1          " requires a Nerd Font in iTerm2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline_theme = 'dracula'
+let g:shades_of_purple_airline = 1
+let g:airline_theme = 'shades_of_purple'
 
 " =============================================================================
 " Plugin Config: vim-gitgutter
