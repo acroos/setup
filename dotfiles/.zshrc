@@ -3,6 +3,7 @@ EDITOR='vim'
 # Oh My Zsh
 # =============================================================================
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR='vim'
 ZSH_THEME="shades-of-purple"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -10,6 +11,10 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 alias sz='source ~/.zshrc'
 alias zc='${EDITOR} ~/.zshrc'
+
+# Zsh completion
+autoload -Uz compinit
+compinit
 
 # =============================================================================
 # fnm — Fast Node Manager
@@ -41,10 +46,9 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
 # =============================================================================
-# Claude Code
+# brew
 # =============================================================================
-
-export ENABLE_LSP_TOOL=1
+export HOMEBREW_NO_ENV_HINTS=1
 
 # =============================================================================
 # git
@@ -74,3 +78,17 @@ alias gcfge='git config --edit --global'
 
 alias be='bundle exec'
 alias b='bundle'
+
+# =============================================================================
+# PATH stuff
+# =============================================================================
+
+
+# =============================================================================
+# jpeg stuff
+# =============================================================================
+
+export PATH="/opt/homebrew/opt/jpeg/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/jpeg/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/jpeg/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/jpeg/lib/pkgconfig"
