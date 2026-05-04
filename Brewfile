@@ -40,8 +40,7 @@ cask "font-fira-code-nerd-font"
 cask "docker"  # Docker Desktop
 
 # Apps
-cask "iterm2"
 cask "brave-browser"
 cask "rectangle"
-cask "claude-code"
 cask "visual-studio-code"
+cask "cmux"
